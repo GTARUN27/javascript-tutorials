@@ -12,3 +12,4 @@ student["name"]="garramilla tarun";
 console.log(student["name"]);
 
 
+
