@@ -30,9 +30,11 @@ console.log(div.innerHTML);
  console.log(divs);
  divs[0].innerText="tarun";
  divs[1].innerText="ronaldo";
- divs[2].innerText="neymar and messi";*/
+ divs[2].innerText="neymar and messi";
  let divs= document.querySelectorAll(".box");
  console.log(divs);
+ let val = divs.getAttribute("class");
+ console.log(val);
  let idx=0;
  for(div of divs){
     div.innerText=`RONALDO MESSI NEYMAR ${idx}`;
@@ -42,6 +44,44 @@ console.log(div.innerHTML);
     
     idx++;
  }
- 
-
- 
+let div = document.querySelector("div");
+console.log(div);
+let val = div.getAttribute("id");
+console.log(val);
+let para = document.querySelector("p");
+console.log(para.getAttribute("class"));
+console.log(para.setAttribute("class","newclass"));
+let divs =document.querySelector("div");
+console.log(divs);
+let di =divs.style;
+console.log(di);
+div.style.backgroundColor ="green";
+div.style.fontSize ="32px";
+let newbtn = document.createElement("button");
+newbtn.innerText="click me yeahh";
+console.log(newbtn);
+let division=document.querySelector("div");
+division.append(newbtn);
+division.prepend(newbtn);
+division.before(newbtn);
+division.after(newbtn);
+let heading = document.createElement("h1");
+heading.innerText="this is crazyyyyy";
+document.querySelector("body").prepend(heading);
+let remove = document.querySelector("p");
+remove.remove(remove);
+let newbtnn = document.createElement("button");
+newbtnn.innerText="click me!";
+console.log(newbtnn);
+newbtnn.style.color="white";
+newbtnn.style.backgroundColor="red";
+document.querySelector("body").prepend(newbtnn);*/
+let parag=document.querySelector("p");
+console.log(parag);
+ let ga=parag.getAttribute("class");
+ console.log(ga);
+ //let sa =parag.setAttribute("class","newclass");
+//console.log(sa);
+let cl=parag.classList;
+console.log(cl);
+console.log(parag.classList.add("newclass"));
